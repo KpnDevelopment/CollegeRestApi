@@ -1,0 +1,46 @@
+// get all departments
+
+
+GET  http://localhost:5000/departments
+
+
+###
+
+//create Dpeartment
+
+POST http://localhost:5000/departments
+Content-Type: application/json
+
+{
+    "depname" :"Computer Engineering Department",
+    "hod" : "Asa G Nair"
+}
+
+
+###
+
+// sort a department using id
+
+GET http://localhost:5000/departments/60c20cee89a90f2ba1a33964
+
+
+### 
+
+// update schema
+
+PATCH  http://localhost:5000/departments/60c20cee89a90f2ba1a33964
+Content-Type: application/json
+
+{
+       "depname": "Electronics Engineering",
+       "hod": "Anjana S"
+
+}
+
+### 
+
+// schema delete
+
+DELETE http://localhost:5000/departments/60c20b573a8a0826d8106032
+
+### 

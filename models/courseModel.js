@@ -1,11 +1,12 @@
-const { Mongoose } = require("mongoose");
+const mongoose = require('mongoose')
 
-// monogo schema for array object in json
+// mongodb schema for array objects in json 
 
-const courseSchema = new Mongoose.Schema({
+const courseSchema = new mongoose.Schema({
     name: {
         type: String,
         require: true
+
     },
     noyear: {
         type: String,
@@ -13,4 +14,4 @@ const courseSchema = new Mongoose.Schema({
     }
 })
 
-module.exports = Mongoose.model("Course", courseSchema)
+module.exports = mongoose.model("Course", courseSchema)
