@@ -12,8 +12,8 @@ POST http://localhost:5000/departments
 Content-Type: application/json
 
 {
-    "depname" :"Computer Engineering Department",
-    "hod" : "Asa G Nair"
+    "depname" :"Printing Technology Department",
+    "hod" : "Anoop"
 }
 
 

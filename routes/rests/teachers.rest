@@ -1,0 +1,45 @@
+// get all teachers
+
+
+GET  http://localhost:5000/teachers
+
+
+###
+
+//create Dpeartment
+
+POST http://localhost:5000/teachers
+Content-Type: application/json
+
+{
+    "tname":"Sreejith",
+    "department":"Computer Engineering Department"
+
+}
+
+###
+
+// sort a department using id
+
+GET http://localhost:5000/teachers/60c34dd997eec28b90665d34
+
+### 
+
+// update schema
+
+PATCH  http://localhost:5000/teachers/60c34dd997eec28b90665d34
+Content-Type: application/json
+
+{
+    "department": "Computer Engineering Department"
+
+}
+
+
+### 
+
+// schema delete
+
+DELETE http://localhost:5000/teachers/60c35368dd23c3a2ef654759
+
+### 
