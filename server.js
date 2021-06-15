@@ -28,10 +28,15 @@ app.use('/courses', CourseRouter)
 const DepartmentsRouter = require('./routes/departments')
 app.use('/departments', DepartmentsRouter)
 
-// techer router
+// teacher router
 
 const TeacherRouter = require('./routes/teachers')
 app.use('/teachers', TeacherRouter)
+
+// student router
+
+const StudentRouter = require('./routes/students')
+app.use('/students', StudentRouter)
 
 
 // port config in localhost

@@ -1,0 +1,47 @@
+// get all Student
+
+
+GET  http://localhost:5000/students
+
+
+###
+
+//sort student
+
+GET http://localhost:5000/students/60c8b50725d1899ad1efcf49
+
+
+###
+
+//create studnet
+
+POST http://localhost:5000/students
+Content-Type: application/json
+
+{
+    "admNo" :"1002",
+    "studentName":"John",
+    "department":"Electronics Engineering",
+    "yearOfAdm":"2018"
+}
+
+### 
+
+// update schema
+
+PATCH  http://localhost:5000/students/60c8c7bf1155c5cef70a6295
+Content-Type: application/json
+
+{
+    "yearOfAdm": "2020"
+
+}
+
+
+###
+
+// schema delete
+
+DELETE http://localhost:5000/students/60c8a9ea3eeebb7e6aaea42f
+
+### 
