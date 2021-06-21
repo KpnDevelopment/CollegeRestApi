@@ -12,8 +12,8 @@ POST http://localhost:5000/teachers
 Content-Type: application/json
 
 {
-    "tname":"Sreejith",
-    "department":"Computer Engineering Department"
+    "tname":"been",
+    "department":"elctroinics Engineering Department"
 
 }
 
@@ -27,11 +27,12 @@ GET http://localhost:5000/teachers/60c34dd997eec28b90665d34
 
 // update schema
 
-PATCH  http://localhost:5000/teachers/60c34dd997eec28b90665d34
+PUT  http://localhost:5000/teachers/60d02e90814a011d88a6508b
 Content-Type: application/json
 
 {
-    "department": "Computer Engineering Department"
+    "tname":"doras",
+    "department": "Computer Engineering Departments"
 
 }
 
@@ -40,6 +41,6 @@ Content-Type: application/json
 
 // schema delete
 
-DELETE http://localhost:5000/teachers/60c35368dd23c3a2ef654759
+DELETE http://localhost:5000/teachers/60cee887df13dd1d50ce8336
 
 ### 

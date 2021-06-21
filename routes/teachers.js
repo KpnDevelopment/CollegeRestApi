@@ -39,7 +39,7 @@ router.get('/:id', getTeachers, async (req, res) => {
 
 // updating One
 
-router.patch('/:id', getTeachers, async (req, res) => {
+router.put('/:id', getTeachers, async (req, res) => {
     if (req.body.tname != null) {
         res.teachers.tname = req.body.tname
     }
