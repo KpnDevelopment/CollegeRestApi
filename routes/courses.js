@@ -47,7 +47,7 @@ router.post('/', async (req, res) => {
 
 
 
-router.patch('/:id', getCourse, async (req, res) => {
+router.put('/:id', getCourse, async (req, res) => {
     if (req.body.name != null) {
         res.course.name = req.body.name
     }

@@ -41,7 +41,7 @@ router.get('/:id', getDepartments, async (req, res) => {
 // updating one Departments
 
 
-router.patch('/:id', getDepartments, async (req, res) => {
+router.put('/:id', getDepartments, async (req, res) => {
     if (req.body.depname != null) {
         res.departments.depname = req.body.depname
     }

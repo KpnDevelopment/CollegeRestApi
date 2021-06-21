@@ -28,7 +28,7 @@ GET http://localhost:5000/departments/60c20cee89a90f2ba1a33964
 
 // update schema
 
-PATCH  http://localhost:5000/departments/60c20cee89a90f2ba1a33964
+PUT   http://localhost:5000/departments/60c20cee89a90f2ba1a33964
 Content-Type: application/json
 
 {

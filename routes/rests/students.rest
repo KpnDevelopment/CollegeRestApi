@@ -29,7 +29,7 @@ Content-Type: application/json
 
 // update schema
 
-PATCH  http://localhost:5000/students/60c8c7bf1155c5cef70a6295
+PUT  http://localhost:5000/students/60c8c7bf1155c5cef70a6295
 Content-Type: application/json
 
 {

@@ -31,7 +31,7 @@ DELETE http://localhost:5000/courses/60c1abf07ffac8311ca1fa01
 
 // update schema
 
-PATCH  http://localhost:5000/courses/60c1ac514bf29732796b4611
+PUT  http://localhost:5000/courses/60c1ac514bf29732796b4611
 Content-Type: application/json
 
 {
