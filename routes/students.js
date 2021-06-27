@@ -21,6 +21,7 @@ router.post('/', async (req, res) => {
         admNo: req.body.admNo,
         studentName: req.body.studentName,
         department: req.body.department,
+        yearOfAdm: req.body.yearOfAdm,
         dob: req.body.dob,
         sslcRegNo: req.body.sslcRegNo,
         gender: req.body.gender,

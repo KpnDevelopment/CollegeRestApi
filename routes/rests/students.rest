@@ -21,7 +21,7 @@ Content-Type: application/json
 {
     "admNo" :"1002",
     "studentName":"John",
-    "department":"Electronics Engineering",
+    "department":"Computer Engineering",
     "yearOfAdm":"2018",
     "dob":"10-11-2000",
     "sslcRegNo":"181829201",
