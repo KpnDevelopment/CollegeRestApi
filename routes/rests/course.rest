@@ -1,17 +1,17 @@
 //get all 
 
-GET http://localhost:5000/courses
+GET http://localhost:5001/courses
 
 ###
 // request for sortone
-GET http://localhost:5000/courses/60c1ac974bf29732796b4612
+GET http://localhost:5001/courses/60c1ac974bf29732796b4612
 
 
 ###
 
 // add data to schema
 
-POST  http://localhost:5000/courses
+POST  http://localhost:5001/courses
 Content-Type: application/json
 
 {
@@ -25,13 +25,13 @@ Content-Type: application/json
 
 // schema delete
 
-DELETE http://localhost:5000/courses/60c1abf07ffac8311ca1fa01
+DELETE http://localhost:5001/courses/60c1abf07ffac8311ca1fa01
 
 ### 
 
 // update schema
 
-PUT  http://localhost:5000/courses/60c1ac514bf29732796b4611
+PUT  http://localhost:5001/courses/60c1ac514bf29732796b4611
 Content-Type: application/json
 
 {

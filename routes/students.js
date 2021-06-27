@@ -21,7 +21,16 @@ router.post('/', async (req, res) => {
         admNo: req.body.admNo,
         studentName: req.body.studentName,
         department: req.body.department,
-        yearOfAdm: req.body.yearOfAdm
+        dob: req.body.dob,
+        sslcRegNo: req.body.sslcRegNo,
+        gender: req.body.gender,
+        fatherName: req.body.fatherName,
+        address: req.body.address,
+        pincode: req.body.pincode,
+        mobile: req.body.mobile,
+        email: req.body.email
+
+
 
     })
     try {
@@ -54,6 +63,30 @@ router.put('/:id', getStudents, async (req, res) => {
     }
     if (req.body.yearOfAdm != null) {
         res.students.yearOfAdm = req.body.yearOfAdm
+    }
+    if (req.body.dob != null) {
+        res.students.dob = req.body.dob
+    }
+    if (req.body.sslcRegNo != null) {
+        res.students.sslcRegNo = req.body.sslcRegNo
+    }
+    if (req.body.gender != null) {
+        res.students.gender = req.body.gender
+    }
+    if (req.body.fatherName != null) {
+        res.students.fatherName = req.body.fatherName
+    }
+    if (req.body.address != null) {
+        res.students.address = req.body.address
+    }
+    if (req.body.pincode != null) {
+        res.students.pincode = req.body.pincode
+    }
+    if (req.body.mobile != null) {
+        res.students.mobile = req.body.mobile
+    }
+    if (req.body.email != null) {
+        res.students.email = req.body.email
     }
     try {
         const updatedStudent = await res.students.save()

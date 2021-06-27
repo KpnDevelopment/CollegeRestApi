@@ -1,18 +1,21 @@
-require("dotenv").config()
+// require("dotenv").config()
+const dotenv = require('dotenv');
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
 const cors = require('cors')
 
 
+dotenv.config();
+
 // database connection codes
 
 
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
+mongoose.connect(process.env.DATABASE_CONNECTOR, { useNewUrlParser: true }, { useUnifiedTopology: true }, () => console.log('db connected'));
 
-const db = mongoose.connection
-db.on('error', (error) => console.log(error))
-db.once('open', () => console.log("db Connected"))
+// const db = mongoose.connection
+// db.on('error', (error) => console.log(error))
+// db.once('open', () => console.log("db Connected"))
 
 
 // routes
@@ -40,4 +43,4 @@ app.use('/students', StudentRouter)
 
 
 // port config in localhost
-app.listen(5000, () => console.log("server started"))
+app.listen(5001, () => console.log("server started"))

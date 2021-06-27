@@ -1,40 +1,58 @@
 // get all Student
 
 
-GET  http://localhost:5000/students
+GET  http://localhost:5001/students
 
 
 ###
 
 //sort student
 
-GET http://localhost:5000/students/60c8b50725d1899ad1efcf49
+GET http://localhost:5001/students/60c8b50725d1899ad1efcf49
 
 
 ###
 
 //create studnet
 
-POST http://localhost:5000/students
+POST http://localhost:5001/students
 Content-Type: application/json
 
 {
     "admNo" :"1002",
     "studentName":"John",
     "department":"Electronics Engineering",
-    "yearOfAdm":"2018"
+    "yearOfAdm":"2018",
+    "dob":"10-11-2000",
+    "sslcRegNo":"181829201",
+    "gender":"male",
+    "fatherName":"rav",
+    "address":"apapalapaal dkvjnskbv kjnkav skj kajvbkbd kj asvk",
+    "pincode":"123456",
+    "mobile":"1234567890",
+    "email":"wmailx@gmail.com"
 }
 
 ### 
 
 // update schema
 
-PUT  http://localhost:5000/students/60c8c7bf1155c5cef70a6295
+PUT  http://localhost:5001/students/60d8a0fdb26a3c145cb238d5
 Content-Type: application/json
 
 {
-    "yearOfAdm": "2020"
-
+    "admNo" :"1002",
+    "studentName":"John s",
+    "department":"Electronics Engineering",
+    "yearOfAdm":"2017",
+    "dob":"10-11-2001",
+    "sslcRegNo":"100029201",
+    "gender":"male",
+    "fatherName":"rava",
+    "address":"apapalapaal d908kvjnskbv kjnkav skj kajvbkbd kj asvk",
+    "pincode":"123496",
+    "mobile":"1234567990",
+    "email":"java@gmail.com"
 }
 
 
@@ -42,6 +60,6 @@ Content-Type: application/json
 
 // schema delete
 
-DELETE http://localhost:5000/students/60c8a9ea3eeebb7e6aaea42f
+DELETE http://localhost:5001/students/60c8a9ea3eeebb7e6aaea42f
 
 ### 
