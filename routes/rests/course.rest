@@ -17,7 +17,10 @@ Content-Type: application/json
 {
     
     "name":"Printing Technology",
-    "noyear":"3 years"
+    "noYear":"1 years",
+    "totalPaper":"32",
+    "description":"happy to learning"
+
 }
 
 
@@ -25,15 +28,18 @@ Content-Type: application/json
 
 // schema delete
 
-DELETE http://localhost:5001/courses/60c1abf07ffac8311ca1fa01
+DELETE http://localhost:5001/courses/60d97073efe168dc6acb3084
 
 ### 
 
 // update schema
 
-PUT  http://localhost:5001/courses/60c1ac514bf29732796b4611
-Content-Type: application/json
 
+PUT http://localhost:5001/courses/60d96ed29e1059d7a24fd9a4
+Content-Type: application/json
 {
-       "name": "Computer Engineering"
+    "name":"Printing Technology",
+    "noYear":"1 years",
+    "totalPaper":"32",
+    "description":"happy to learning"
 }

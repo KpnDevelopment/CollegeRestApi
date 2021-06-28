@@ -31,7 +31,10 @@ router.post('/', async (req, res) => {
 
     const course = new Course({
         name: req.body.name,
-        noyear: req.body.noyear
+        noYear: req.body.noYear,
+        totalPaper: req.body.totalPaper,
+        description: req.body.description,
+
     })
     try {
         const newCourse = await course.save()
@@ -52,8 +55,14 @@ router.put('/:id', getCourse, async (req, res) => {
     if (req.body.name != null) {
         res.course.name = req.body.name
     }
-    if (req.body.noyear != null) {
-        res.course.noyear = req.body.noyear
+    if (req.body.noYear != null) {
+        res.course.noYear = req.body.noYear
+    }
+    if (req.body.totalPaper != null) {
+        res.course.totalPaper = req.body.totalPaper
+    }
+    if (req.body.description != null) {
+        res.course.description = req.body.description
     }
     try {
         const updatedCourse = await res.course.save()

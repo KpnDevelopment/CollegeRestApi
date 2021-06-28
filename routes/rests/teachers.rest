@@ -13,7 +13,15 @@ Content-Type: application/json
 
 {
     "tname":"been",
-    "department":"elctroinics Engineering Department"
+    "department":"elctroinics Engineering Department",
+     "yearOfJoin":"2014",
+    "dob":"10-11-2000",
+    "sslcRegNo":"181829201",
+    "gender":"male",
+    "address":"apapalapaal dkvjnskbv kjnkav skj kajvbkbd kj asvk",
+    "pincode":"123456",
+    "mobile":"1234567890",
+    "email":"wmailx@gmail.com"
 
 }
 
@@ -21,26 +29,36 @@ Content-Type: application/json
 
 // sort a department using id
 
-GET http://localhost:5001/teachers/60c34dd997eec28b90665d34
+GET http://localhost:5001/teachers/60d95639c5efb8707e3bad19
 
 ### 
 
 // update schema
 
-PUT  http://localhost:5001/teachers/60d02e90814a011d88a6508b
+PUT  http://localhost:5001/teachers/60d95ca7e9082a821133deac
 Content-Type: application/json
 
-{
-    "tname":"doras",
-    "department": "Computer Engineering Departments"
+    {
+    "tname":"been  sss",
+    "department":"Computer Engineering ",
+     "yearOfJoin":"2012",
+    "dob":"10-11-2000",
+    "sslcRegNo":"181201",
+    "gender":"male",
+    "address":"apapalapaal  kjnkav skj kajvbkbd kj asvk",
+    "pincode":"123457",
+    "mobile":"1234567899",
+    "email":"wmail@gmail.com"
 
 }
+
+
 
 
 ### 
 
 // schema delete
 
-DELETE http://localhost:5001/teachers/60cee887df13dd1d50ce8336
+DELETE http://localhost:5001/teachers/60d95c5eecf72a8141991709
 
 ### 
