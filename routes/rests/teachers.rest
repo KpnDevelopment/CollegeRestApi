@@ -12,6 +12,8 @@ POST http://localhost:5001/teachers
 Content-Type: application/json
 
 {
+
+    "staffId":"123",
     "tname":"been",
     "department":"elctroinics Engineering Department",
      "yearOfJoin":"2014",
